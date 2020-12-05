@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalisation sat</title>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+<link rel="stylesheet" href="Sstyle.css">
+  
+
+</head>
+<body>
+ <div class="title">
+<h1> Geolocation of ISS with API REST </h1> 
+</div>
+
+<div class="soustitle">
+    <h2>  (International Space Station)</h2>  
+</div>
+
+    <strong><p>laltitude : </strong>  <span id="lat"></span>°</p>
+
+   <strong> <p>longitude: </strong> <span id="log"></span>°</p>
+ <strong>   <p> visiblity : </strong> <span id="vis"></span></p>
+<div class="generate">
+<div id="mapid"></div>
+<p>For more information about the ISS (International Space Station). <a href="https://fr.wikipedia.org/wiki/Station_spatiale_internationale"  target="_blank"> Click here(WIKIPIDEA) </a>  </p>
+
+</div>
+<div id="image"></div>
+<footer> API import from <a href="https://wheretheiss.at/w/developer" target="_blank"> https://wheretheiss.at/w/developer</a> <br> © 2013 Linzig, LLC</footer>
+</body>
+<script src="Api.js"></script>
+</html>
